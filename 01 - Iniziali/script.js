@@ -5,9 +5,20 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 // Dichiara la funzione qui.
 
+function getFirstLetter(names) {
+    const firstLetter = [];
+    for(let i = 0; i < names.length; i++) {
+        firstLetter.push(names[i][0]);
+        // console.log(firstLetter);
+    }
+    return firstLetter;
+}
 
 // Invoca la funzione qui e stampa il risultato in console
 
+const firstLetter = getFirstLetter(names);
 
+// Risultato atteso: ["A", "L", "M", "A", "G", "A"]
 
-//Risultato atteso: ["A", "L", "M", "A", "G", "A"]
+console.log(firstLetter);
+
