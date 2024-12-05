@@ -18,12 +18,12 @@ console.log(hour)
 let salut;
     if (hour < 13) {
     salut = `Buongiorno ${name}`
-    } else if (hour < 20) {
+    } else if (hour < 17) {
     salut = `Buonpomeriggio ${name}`
     } else {
     salut = `Buonasera ${name}`
     }
-    // return `Buonasera ${name}`
+    return salut;
 }
 
 // Invoca la funzione qui e stampa il risultato in console
