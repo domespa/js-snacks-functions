@@ -11,8 +11,25 @@ const name = 'Mario';
 // Dichiara la funzione qui.
 
 
+function hourSalut(name) {
+const d = new Date();
+let hour = d.getHours();
+console.log(hour)
+let salut;
+    if (hour < 13) {
+    salut = `Buongiorno ${name}`
+    } else if (hour < 20) {
+    salut = `Buonpomeriggio ${name}`
+    } else {
+    salut = `Buonasera ${name}`
+    }
+    // return `Buonasera ${name}`
+}
+
 // Invoca la funzione qui e stampa il risultato in console
 
-
+const newSalut = hourSalut(name)
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
+
+console.log(newSalut)
